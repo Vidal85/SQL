@@ -1,0 +1,23 @@
+CREATE TABLE my_store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, cost INTEGER, type text);
+
+INSERT INTO my_store VALUES (1, "PS5", 2, 400, "electronic");
+INSERT INTO my_store VALUES (2, "TV", 3, 800, "electronic");
+INSERT INTO my_store VALUES (3, "Airpods", 4, 150, "electronic");
+INSERT INTO my_store VALUES (4, "Shoes", 6, 100, "clothing");
+INSERT INTO my_store VALUES (5, "Games", 4, 30, "electronic");
+INSERT INTO my_store VALUES (6, "Pants", 10, 10, "clothing");
+INSERT INTO my_store VALUES (7, "shirts", 12, 25, "clothing");
+INSERT INTO my_store VALUES (8, "Chair", 5, 45, "house");
+INSERT INTO my_store VALUES (9, "Table", 1, 150, "house");
+INSERT INTO my_store VALUES (10, "Hammer", 3,17, "tool");
+INSERT INTO my_store VALUES (11, "Shovel", 2, 25, "tool");
+INSERT INTO my_store VALUES (12, "Drill", 3, 80, "tool");
+INSERT INTO my_store VALUES (13, "Tires", 4, 125, "auto");
+INSERT INTO my_store VALUES (14, "Wheels", 4, 225, "auto");
+INSERT INTO my_store VALUES (15, "Apples", 2, 2, "food");
+SELECT * FROM my_store;
+
+SELECT * FROM my_store order by cost;
+
+SELECT SUM(cost) FROM my_store;
+
